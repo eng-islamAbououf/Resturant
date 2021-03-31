@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Home">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tabIndicatorHeight="2dp"
+        app:tabIndicatorColor="@color/white"
+        android:background="@color/orange"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/gray"
+        app:tabSelectedTextColor="@color/white"
+        app:tabGravity="fill"
+        >
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food"
+        />
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/drinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drinks"
+        />
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/snakes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/snakes"
+        />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91"
+        />
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/g1"
+        android:background="@color/orange"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_30sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_20sdp"/>
+    <TextView
+        android:id="@+id/total_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/g1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/red_circle"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.07"
+        android:gravity="center"
+        android:text="Total Price :  $ 0.0"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

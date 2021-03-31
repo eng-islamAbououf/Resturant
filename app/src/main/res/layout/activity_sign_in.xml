@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SignIn"
+    android:background="@drawable/background1">
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/parent1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:visibility="visible">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+      app:layout_constraintBottom_toTopOf="@id/g1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:text="@string/sign_in"
+      android:textSize="@dimen/_50sdp"
+      android:layout_margin="@dimen/_15sdp"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      />
+
+   <androidx.constraintlayout.widget.Guideline
+       android:id="@+id/g1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       app:layout_constraintGuide_percent="0.41"
+       />
+   <EditText
+       android:id="@+id/email"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_50sdp"
+       app:layout_constraintTop_toBottomOf="@id/g1"
+       android:layout_margin="@dimen/_10sdp"
+       android:background="@drawable/edittext_bg"
+       android:hint="@string/enter_ur_email"
+       android:textColorHighlight="@color/gray"
+       android:textColor="@color/black"
+       android:inputType="textEmailAddress"
+       android:textSize="@dimen/_15sdp"
+       android:padding="@dimen/_10sdp"
+       android:drawableStart="@drawable/ic_baseline_email_24"
+       android:drawablePadding="@dimen/_15sdp"
+       />
+
+   <EditText
+       android:id="@+id/password"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_50sdp"
+       app:layout_constraintTop_toBottomOf="@id/email"
+       android:layout_margin="@dimen/_10sdp"
+       android:background="@drawable/edittext_bg"
+       android:hint="@string/password"
+       android:textColorHighlight="@color/gray"
+       android:textColor="@color/black"
+       android:textSize="@dimen/_15sdp"
+       android:padding="@dimen/_8sdp"
+       android:inputType="textPassword"
+       android:drawablePadding="@dimen/_15sdp"
+       android:drawableStart="@drawable/ic_baseline_lock_24"
+       />
+
+   <Button
+       android:id="@+id/signIn_btn"
+       android:layout_width="@dimen/_150sdp"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toBottomOf="@id/password"
+       android:layout_marginTop="@dimen/_20sdp"
+       android:text="@string/sign_in"
+       android:textAllCaps="false"
+       android:textSize="@dimen/_21sdp"
+       android:background="@drawable/red_circle"
+       android:padding="@dimen/_10sdp"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+   </ScrollView>
+   <ProgressBar
+       android:id="@+id/prog"
+       android:layout_width="@dimen/_60sdp"
+       android:layout_height="@dimen/_60sdp"
+       android:visibility="gone"
+       android:layout_gravity="center"
+       android:theme="@style/AppTheme.WhiteAccent"
+       />
+
+</FrameLayout>

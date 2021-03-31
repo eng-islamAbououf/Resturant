@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "490015946965",
+    "firebase_url": "https://calculation-794c4.firebaseio.com",
+    "project_id": "calculation-794c4",
+    "storage_bucket": "calculation-794c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490015946965:android:db1a91bb99631b259f8a5c",
+        "android_client_info": {
+          "package_name": "com.example.calculation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490015946965-2rrq66rjulbn4f8amq9h333286rnchct.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.calculation",
+            "certificate_hash": "977c6f5a6722e4e3a61ea27e43dd4c8e787157b1"
+          }
+        },
+        {
+          "client_id": "490015946965-mo3quepd9qrbrnh60lrb0o0ueicsv1bd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBok8qrI7XhlSCFrETyaa99AAJq-5zzp8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490015946965-mo3quepd9qrbrnh60lrb0o0ueicsv1bd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
